@@ -1,17 +1,30 @@
-# mengxuan-cpt205-opengl
+# OpenGL Interactive Birthday Card
 
-Project materials by Mengxuan Shen.
+Individual computer-graphics coursework (C++ / OpenGL / FreeGLUT) by **Mengxuan Shen**.
 
-This is a curated public portfolio repository. Project writeups and original coursework materials are attributed as individual or collaborative in the portfolio site.
+**Portfolio page:** https://shine574269.github.io/projects/cpt205-opengl.html
+
+A real-time 2D scene built entirely from geometric primitives (no images or textures), with timer-driven animation, transformations and five kinds of interaction.
+
+| Input | Result |
+|---|---|
+| Right click | Switch between day and night |
+| Left click | Fade the candle flame (10 clicks to blow it out) |
+| W/A/S/D, R, Q/E | Move, rotate and scale the butterfly |
+| Space | Release the balloons |
+| Enter | Show the birthday message |
 
 ## Files
-- `birthday-card-screens.jpg`
-- `castle-model-render.png`
-- `birthday-card-report.pdf`
-- `castle-original-source.zip`
-- `birthday-card-source.zip`
-- `birthday-card.cpp`
-- `castle-showcase.pdf`
+| File | Contents |
+|---|---|
+| `birthday-card.cpp` | Complete source of the birthday card |
+| `birthday-card-source.zip` | Source as submitted |
+| `birthday-card-report.pdf` | Report: primitives, interaction and animation |
+| `birthday-card-screens.jpg` | Day and night screenshots |
+| `castle-*` | Materials from a separate 3D scene exercise in the same module (not shown on the portfolio) |
 
-## Notes
-Please check licences and team permissions before redistribution. Files with embedded API keys, private settings and caches should not be committed.
+## Building
+Compile `birthday-card.cpp` with any C++ compiler linked against OpenGL and FreeGLUT, for example:
+```bash
+g++ birthday-card.cpp -o birthday-card -lGL -lGLU -lglut
+```
